@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <! -- title of the html on the Browser --> 
+    <title>Contact Form 2023</title>
+    <meta name="description" content="A brief description of your page">
+    <meta name="keywords" content="keywords, related, to, your, content">
+    <link rel="stylesheet" href="styles2.css"> <!-- Link to your CSS file -->
+    <script src="script.js" defer></script> <!-- Link to your JavaScript file (with "defer" for better performance) -->
+</head>
+<body>
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar">X</div>
+            
+        </div>
+        <nav class="header-nav" id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Speak with an expert</h1>
+        <section class="section-registration-form" id="registration-form">
+            <h2 class="h2-registration">Registration</h2>
+            <form>
+                <!-- Registration form fields go here -->
+                <label class="label-input" for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                
+                <label class="label-input" for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label class="label-input" for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+
+                <label class="label-input" for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">United States</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">United Kingdom</option>
+                        <!-- Add more country options as needed -->
+                    </select><br><br>
+                    <hr>
+                
+                <label class="label-susbcribe" for="newsletter">Subscribe to Newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+                
+                <label class="label-terms-conditions" for="terms">I agree to the Terms and Conditions:</label>
+                <input type="checkbox" id="terms" name="terms" required><br>
+                <hr>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        
+        <section id="contact-details">
+            <h2 class="h2-contact-details">Contact Details</h2>
+            <p>
+                For inquiries, please feel free to contact us via email or phone.
+            </p>
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1-555-555-5555</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <!-- Navigation menu -->
+        <nav class="footer-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contact information -->
+        <div class="contact-info">
+            <p>Email: contact@example.com</p>
+            <p>Phone: +1-555-555-5555</p>
+            <p>Address: 123 Main St, City, Country</p>
+        </div>
+
+        <!-- Copyright notice -->
+        <div class="copyright">
+            <p>Developed by &copy; YeYu 2023 - under CC BY-NC 4.0 - <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">Attribution-NonCommercial 4.0 International</a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+/* Add your general styles here */
+body {
+    background-color: rgb(236, 233, 233);
+    background-image: url(./imgs/background1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Styles for larger screens */
+@media (min-width: 768px) {
+    /* Float the sections to the left and right to align them side by side */
+    #registration-form {
+        width: 50%;
+        float: right;
+        box-sizing: border-box;
+    }
+    #contact-details {
+        width: 50%;
+        margin-left: 1cm;
+        box-sizing: border-box;
+        color: azure;
+    }
+    
+    /* Clear the float to ensure proper layout */
+    #contact-details {
+        clear: left;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-left: 1cm;
+        color: rgb(226, 202, 48);
+    }
+
+}
+
+/* Styles for smaller screens */
+@media (max-width: 767px) {
+    /* Reset the width and float to stack the sections */
+    #registration-form, #contact-details {
+        width: 100%;
+        float: none;
+        margin-left: 1cm;
+    }
+
+    #contact-details {
+        color: azure;
+    }
+    
+    h1 {
+        font-size: 35px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        margin-left: 1cm;
+        color: rgb(226, 202, 48);
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .header-nav {
+        display: none;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .header-nav ul {
+        padding: 20px 0;
+    }
+
+    .header-nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .header-nav a {
+        font-size: 18px;
+        color: white;
+    }
+
+    /* Show the menu when the menu icon is clicked */
+    .header-nav.show {
+        display: block;
+    }
+}
+
+
+.h2-registration {
+    padding-top: 0;
+}
+
+
+.h2-contact-details {
+    padding-top: 17px;
+    
+}
+
+#registration-form {
+    background-color: rgba(255, 255, 255, 0.7); /* Adjust the last value (0.7) for opacity */
+    padding: 20px; /* Add some padding to separate content from the background */
+    /* Additional styles for positioning, width, etc. */
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Reset background for the form elements inside #registration-form */
+#registration-form form {
+    background-color: transparent;
+}
+
+/* Example styles for form elements (adjust as needed) */
+#registration-form label, #registration-form input, #registration-form select {
+    /* Your styles for form elements here */
+}
+
+.section-registration-form {
+    margin-right: 40px;
+    border-radius: 5%;
+}
+
+.label-input {
+    display: inline-block;
+    width: 140px;
+}
+
+/* Style for input boxes with shadow and no border */
+input[type="text"], input[type="email"], input[type="tel"], select {
+    border: none; /* Remove the border */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    padding: 5px; /* Add some padding for spacing  */
+    padding-right: 40px;
+    border-radius: 2%;
+    /* Additional styling for font, background, etc. */
+}
+
+/* Style for checkboxes (if needed) */
+input[type="checkbox"] {
+    /* Your checkbox styles here */
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    padding: 5px;
+}
+
+/* Styles for the submit button */
+input[type="submit"] {
+    border: none; /* Remove the border */
+    background-color: orange; /* Set the button background color */
+    color: white; /* Set the text color */
+    padding: 10px 20px; /* Add padding for spacing */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a shadow */
+    transition: background-color 0.3s ease; /* Add a smooth color transition on hover */
+}
+
+/* Style the button on hover */
+input[type="submit"]:hover {
+    background-color: darkorange; /* Change the background color on hover */
+}
+
+/* Styles for the footer section */
+.footer {
+    background-color: #333; /* Background color for the footer */
+    color: white; /* Text color for the footer */
+    padding: 20px; /* Add padding for spacing  */
+    /* Center align text and items */
+    text-align: left;
+    margin-top: 280px;
+    margin-left: -1px;
+    margin-right: -1px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Style the navigation menu in the footer */
+.footer-nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+}
+
+.footer-nav li {
+    display: inline; /* Display menu items horizontally */
+    margin: 0 15px; /* Add spacing between menu items */
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Style the contact information */
+.contact-info p {
+    margin: 5px 0; /* Add spacing between contact details */
+}
+
+/* Style the copyright notice */
+.copyright {
+    margin-top: 20px; /* Add spacing between contact info and copyright */
+}
+
+
+/* Styles for the header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Styles for the menu icon (hamburger) */
+/* Styles for the menu icon (hamburger) */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: background-color 0.3s;
+}
+
+/* Styles for the navigation menu */
+.header-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header-nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+/* Styles for the menu icon when it's clicked (to create an "X" close icon) */
+.menu-icon.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
